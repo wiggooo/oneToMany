@@ -1,4 +1,3 @@
-
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
@@ -24,10 +23,10 @@ public class ManyToManyTest {
         Session session = sf.openSession();
         Transaction tx = session.beginTransaction();
 
-        Student student1 = new Student("Erik", "201");
-        Student student2 = new Student("Lars", "455");
-        Student student3 = new Student("Anders", "134");
-        Tutor tutor1 = new Tutor("2387", "Fredrik", 35000);
+        Student student1 = new Student("Stefan", "333");
+        Student student2 = new Student("Olle", "443");
+        Student student3 = new Student("Lisa", "123");
+        Tutor tutor1 = new Tutor("2387", "Nahid", 35000);
 
         session.save(student1);
         session.save(student2);
